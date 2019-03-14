@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: #f0f0f0;
+  background-color: #f0f0f0;
+  cursor: url("http://kidstudio.co/assets/css/../images/cursor.png") 25 15, auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

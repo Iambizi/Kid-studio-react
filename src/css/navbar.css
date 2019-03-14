@@ -1,0 +1,10 @@
+.menu-links{
+    font-size: 0.8em;
+    color: #030303;
+    z-index: 565656;
+    top: 4em;
+    right: 4em;
+    position: fixed;
+    display: inline-block;
+    letter-spacing: 0.1em;
+}

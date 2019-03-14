@@ -1,0 +1,328 @@
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease-in-out;
+  cursor: url("http://kidstudio.co/assets/css/../images/hover.png") 25 15, auto;
+}
+/*Home page*/
+
+.noscroll {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.next {
+  font-family: "Andale Mono", "AndaleMono", Andale-Mono, AndaleMono, monospace;
+  font-size: 0.9em;
+  color: #030303;
+  position: fixed;
+  right: 25px;
+  letter-spacing: 0.1em;
+  z-index: 565656;
+  top: 50%;
+  transform: rotate(90deg);
+  cursor: url("http://kidstudio.co/assets/css/../images/right.png") 25 15, auto;
+}
+
+.prev {
+  font-family: "Andale Mono", "AndaleMono", Andale-Mono, AndaleMono, monospace;
+  font-size: 0.9em;
+  color: #030303;
+  position: fixed;
+  left: 0px;
+  top: 50%;
+  letter-spacing: 0.1em;
+  z-index: 565656;
+  transform: rotate(270deg);
+  cursor: url("http://kidstudio.co/assets/css/../images/left.png") 25 15, auto;
+}
+
+.black-line {
+  position: fixed;
+  left: 15%;
+  top: 35%;
+  height: 10px;
+  width: 156px;
+  background-color: #060606;
+}
+#label1 {
+  left: 15%;
+  top: 37%;
+  vertical-align: text-top;
+}
+#label2 {
+  left: 115%;
+  top: 37%;
+  vertical-align: text-top;
+}
+#label3 {
+  left: 215%;
+  top: 37%;
+  vertical-align: text-top;
+}
+.title-home {
+  position: fixed;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.line1 {
+  font-family: "Helvetica", Helvetica;
+  font-size: 4em;
+  color: #060606;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.img-counter {
+  position: fixed;
+  top: 70%;
+  left: 79%;
+  font-family: "Helvetica", Helvetica;
+  font-size: 1em;
+  color: #060606;
+  font-weight: 600;
+}
+
+/**navbar **/
+
+.title {
+  font-family: "Helvetica-Neue-Bold", "Helvetica Neue Bold", "HelveticaNeueBold",
+    Helvetica-Neue, HelveticaNeue, "Helvetica", Helvetica, "Arial", Arial,
+    sans-serif;
+  font-weight: 600;
+  position: fixed;
+  font-size: 2em;
+  color: #030303;
+  z-index: 565656;
+  top: 1em;
+  left: 2.4em;
+  display: inline-block;
+}
+
+.titleImg img {
+  width: 85px;
+  height: auto;
+}
+
+.nav-links {
+  margin: 1.5em;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.menu-links {
+  font-family: "Andale Mono", "AndaleMono", Andale-Mono, AndaleMono, monospace;
+  font-size: 0.8em;
+  color: #030303;
+  z-index: 565656;
+  top: 4em;
+  right: 4em;
+  position: fixed;
+  display: inline-block;
+  letter-spacing: 0.1em;
+}
+
+.menu-links a:hover {
+  color: white;
+  background-color: #030303;
+}
+
+.main-content {
+  display: "block";
+  z-index: "565656";
+}
+
+.Flex-container {
+  display: "flex";
+  align-items: "center";
+  justify-content: "center";
+  flex-direction: "column";
+  width: "100%";
+  height: "100%";
+  overflow-x: "hidden";
+}
+
+/*Design page*/
+/*Header*/
+.page-headers {
+  font-family: "Helvetica-Neue-Bold", "Helvetica Neue Bold", "HelveticaNeueBold",
+    Helvetica-Neue, HelveticaNeue, "Helvetica", Helvetica, "Arial", Arial,
+    sans-serif;
+  font-weight: 600;
+  font-size: 5.6em;
+  color: #030303;
+  z-index: 56;
+  margin-bottom: 20px;
+}
+
+.projects {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Andale Mono", "AndaleMono", Andale-Mono, AndaleMono, monospace;
+  color: #030303;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.project-links {
+  margin: 1em;
+  font-size: 1em;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
+  text-transform: uppercase;
+}
+
+.project-list a:hover {
+  background-color: #030303;
+  color: #fff;
+}
+
+.project-list {
+  line-height: 2em;
+  letter-spacing: 0.1em;
+  padding-bottom: 5%;
+  font-size: 1em;
+}
+
+/*blog*/
+.blog-board {
+  width: 100%;
+  height: 200%;
+  position: absolute;
+  color: #030303;
+  top: 0;
+  left: 0;
+}
+.blog-post-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #030303;
+}
+.blah {
+  position: fixed;
+  z-index: 1;
+  position: absolute;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.blog-post-info {
+  transform: translate(-25px, 25px);
+  position: absolute;
+  margin-left: -20px;
+}
+.blog-post-title {
+  font-family: "Helvetica-Neue-Bold", "Helvetica Neue Bold", "HelveticaNeueBold",
+    Helvetica-Neue, HelveticaNeue, "Helvetica", Helvetica, "Arial", Arial,
+    sans-serif;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+.post-title {
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.blog-timestamp {
+  display: inline-block;
+  font-family: "am", "Andale Mono", "AndaleMono", Andale-Mono, AndaleMono,
+    monospace;
+  color: #030303;
+  font-size: 0.6em;
+  letter-spacing: 0.1em;
+  padding-top: 0.3em;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.blah img {
+  position: relative;
+  z-index: -1;
+}
+
+/*Blog*/
+.info {
+  position: fixed;
+  top: 25%;
+  right: 0;
+  width: 38%;
+  height: 100%;
+  z-index: 1000000000;
+}
+.info-wrap {
+  width: 75%;
+  background-color: #f0f0f0;
+  font-family: "Avenir", Avenir, sans-serif;
+  font-size: 0.8em;
+  padding: 40px 40px;
+}
+.info-head {
+  font-family: "Helvetica-Neue-Bold", "Helvetica Neue Bold", "HelveticaNeueBold",
+    Helvetica-Neue, HelveticaNeue, "Helvetica", Helvetica, "Arial", Arial,
+    sans-serif;
+  font-size: 7em;
+  font-weight: 600;
+  padding-bottom: 5%;
+  margin-top: -13px;
+  color: #030303;
+}
+.info-kid {
+  font-family: "Avenir", Avenir, sans-serif;
+  padding-bottom: 5%;
+  color: #030303;
+  line-height: 1.5em;
+}
+.info-contact {
+  font-family: "Avenir", Avenir, sans-serif;
+  font-size: 1em;
+  color: #030303;
+  line-height: 1.5em;
+}
+
+/*Footer*/
+
+.footer a:hover {
+  color: white;
+  background-color: #030303;
+  padding-bottom: 5px;
+}
+
+.footer {
+  font-family: "Andale Mono", "AndaleMono", Andale-Mono, AndaleMono, monospace;
+  font-size: 0.8em;
+  color: #030303;
+  z-index: 565656;
+  bottom: 4em;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  letter-spacing: 0.1em;
+  z-index: 565656;
+  display: inline-block;
+}
+
+.social-links {
+  margin: 2em;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
