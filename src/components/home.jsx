@@ -73,7 +73,7 @@ class Home extends Component {
           <div className="Flex-container">
             <div className="noscroll">
               <WarpTilt>
-                <img className="slide" src={currentSrc} alt="" />
+                <img className="home-feature slide" src={currentSrc} alt="" />
               </WarpTilt>
               <div>
                 <a onClick={this.handleNext} className="next">

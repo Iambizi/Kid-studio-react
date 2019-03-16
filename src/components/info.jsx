@@ -3,8 +3,6 @@ import NavBar from "./common/navBar";
 import Footer from "./common/footer";
 import WarpTilt from "./warpTilt";
 
-
-
 class Info extends Component {
   state = {};
   render() {
@@ -39,7 +37,7 @@ class Info extends Component {
                 <WarpTilt>
                   <img
                     alt=""
-                    className="info-img2"
+                    className="info-feature info-img2"
                     src="http://kidstudio.co/content/3-info/1.png"
                   />
                 </WarpTilt>

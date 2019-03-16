@@ -3,10 +3,9 @@ import { Link } from "react-router-dom";
 import NavBar from "./common/navBar";
 import Footer from "./common/footer";
 import $ from "jquery";
-import okHover from "/Users/amir/Desktop/repos/kid-react/src/vendor/okhover.js";
+// import okHover from "/Users/amir/Desktop/repos/kid-react/src/vendor/okhover.js";
 
-$.fn.okHover = okHover;
-
+// $.fn.okHover = okHover;
 
 const backgroundPosition = {
   backgroundPosition: "-450px 29px",
