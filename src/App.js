@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Switch>
+        <Switch basename="/kid-studio-react" >
           <Route path="/home" component={Home} />
           <Route path="/design" component={Design} />
           <Route path="/film" component={Film} />
