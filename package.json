@@ -16,7 +16,7 @@
     "three": "^0.101.1",
     "toastify": "^1.0.12"
   },
-  "homepage": "https://Iambizi.github.io",
+  "homepage": "https://Iambizi.github.io/kid-studio-react",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

@@ -17,7 +17,7 @@ import "./App.scss";
 class App extends Component {
   render() {
     return (
-      <BrowserRouter basename="/kid-studio-react">
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route path="/home" component={Home} />
           <Route path="/design" component={Design} />
