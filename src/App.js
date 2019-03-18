@@ -25,7 +25,7 @@ class App extends Component {
           <Route path="/blog" component={Blog} />
           <Route path="/info" component={info} />
           <Redirect from="/" exact to="/home" />
-          <Redirect to="/not-found" />
+          {/* <Redirect to="/not-found" /> */}
         </Switch>
       </HashRouter>
     );
