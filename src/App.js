@@ -17,7 +17,7 @@ import "./App.scss";
 class App extends Component {
   render() {
     return (
-      <HashRouter>
+      <React.Fragment>
         <Switch>
           <Route path="/home" component={Home} />
           <Route path="/design" component={Design} />
@@ -27,7 +27,7 @@ class App extends Component {
           <Redirect from="/" exact to="/home" />
           <Redirect to="/not-found" />
         </Switch>
-      </HashRouter>
+      </React.Fragment>
     );
   }
 }
