@@ -17,7 +17,7 @@ import "./App.scss";
 class App extends Component {
   render() {
     return (
-      <HashRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route path="/home" component={Home} />
           <Route path="/design" component={Design} />
@@ -25,9 +25,9 @@ class App extends Component {
           <Route path="/blog" component={Blog} />
           <Route path="/info" component={info} />
           <Redirect from="/" exact to="/home" />
-          {/* <Redirect to="/not-found" /> */}
+          <Redirect to="/not-found" />
         </Switch>
-      </HashRouter>
+      </BrowserRouter>
     );
   }
 }
