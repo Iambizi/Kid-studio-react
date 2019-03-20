@@ -369,7 +369,7 @@ a {
   .menu-links {
     font-size: 10px;
     word-spacing: -41px;
-    right: auto;
+    right: 0;
     top: 85px;
     width: 100%;
     text-align: center;
@@ -382,7 +382,7 @@ a {
   }
 
   .home-feature {
-    width: 82vw;
+    width: 70vw;
     height: 25vh;
   }
   .header {
@@ -415,8 +415,8 @@ a {
   }
   /**/
   .nav-links {
-    padding-left: 11px;
-    padding-right: 11px;
+    padding-left: 6px;
+    padding-right: 6px;
   }
   .footer {
     position: fixed !important;
@@ -577,6 +577,7 @@ a {
   }
 
   .info-feature {
+    margin-top: 5px;
     width: 80vw;
     height: 29vh;
   }
