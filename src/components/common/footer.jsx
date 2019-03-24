@@ -5,15 +5,15 @@ const Footer = () => {
     <div className="footer">
       <center>
         <a className="social-links" href="http://instagram.com/kidstudio">
-          INSTAGRAM
+          &nbsp;INSTAGRAM&nbsp;
         </a>
         /
         <a className="social-links" href="https://twitter.com/kidstudio">
-          TWITTER
+          &nbsp;TWITTER&nbsp;
         </a>
         /
         <a className="social-links" href="mailto:projects@kidstudio.co">
-          PROJECTS@KIDSTUDIO.CO
+          &nbsp;PROJECTS@KIDSTUDIO.CO&nbsp;
         </a>
       </center>
     </div>
