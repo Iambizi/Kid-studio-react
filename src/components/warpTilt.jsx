@@ -173,7 +173,8 @@ class WarpTitlt extends Component {
       ...this.state.style
     };
     return (
-      <div className="warp-div"
+      <div
+        className="warp-div"
         style={{
           display: "flex",
           justifyContent: "center",

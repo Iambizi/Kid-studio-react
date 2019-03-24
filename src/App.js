@@ -3,8 +3,6 @@ import {
   Route,
   Redirect,
   Switch,
-  BrowserRouter,
-  HashRouter
 } from "react-router-dom";
 import Home from "./components/home";
 import Design from "./components/design";

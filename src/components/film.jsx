@@ -1,11 +1,6 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import NavBar from "./common/navBar";
 import Footer from "./common/footer";
-import $ from "jquery";
-// import okHover from "/Users/amir/Desktop/repos/kid-react/src/vendor/okhover.js";
-
-// $.fn.okHover = okHover;
 
 const backgroundPosition = {
   backgroundPosition: "-450px 29px",
@@ -68,10 +63,6 @@ class Film extends Component {
     ]
   };
 
-  constructor() {
-    super();
-    this.link = React.createRef();
-  }
   okHova = () => {
     // var link = this.link.current;
     // $(link).okhover({
@@ -82,22 +73,21 @@ class Film extends Component {
     //   el: ".projects"
     //});
   };
-  componentDidMount = () => {
-    console.log();
-  };
+
   render() {
+    const film = this.state;
     return (
       <React.Fragment>
         <NavBar />
         <div className="main-content">
           <div className="projects" style={backgroundPosition}>
-            <div className="page-headers">{this.state.title}</div>
+            <div className="page-headers">{film.title}</div>
             <div className="project-list">
               <center>
-                {this.state.filmName.map((name, i) => (
+                {film.filmName.map((name, i) => (
                   <React.Fragment key={i}>
-                    <a className="project-links" href={this.state.filmLink[i]}>
-                      {this.state.filmName[i]}
+                    <a className="project-links" href={film.filmLink[i]}>
+                      {film.filmName[i]}
                     </a>
                     <br />
                   </React.Fragment>

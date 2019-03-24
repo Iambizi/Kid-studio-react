@@ -25,7 +25,7 @@ class Home extends Component {
   };
 
   componentDidUpdate = () => {
-    console.log(this.state.currentIndex, "update");
+    console.log(this.state.translateValue, "update");
   };
 
   handleNext = () => {
@@ -39,7 +39,8 @@ class Home extends Component {
     if (this.state.currentIndex === this.state.images.length - 1) {
       return this.setState({
         currentIndex: 0,
-        translateValue: 0
+        translateValue: 0,
+        counter: 1
       });
     }
 
@@ -66,6 +67,7 @@ class Home extends Component {
   render() {
     let currentSrc = this.state.images[this.state.currentIndex];
     let currentTitle = this.state.titles[this.state.currentIndex];
+    const carousel = this.state;
     return (
       <React.Fragment>
         <NavBar />
@@ -75,6 +77,40 @@ class Home extends Component {
               <WarpTilt>
                 <img className="home-feature slide" src={currentSrc} alt="" />
               </WarpTilt>
+              {/* <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  width: "100%",
+                  height: "100%",
+                  position: "relative",
+                  left: "1125px"
+                  // left: "2030px"
+                }}
+              >
+                <div
+                  className="carousel"
+                  style={{
+                    display: "flex",
+                    transform: `translateX(${carousel.translateValue}px)`,
+                    transition: "transform ease-out 0.45s",
+                    justifyContent: "space-around",
+                    minWidth: "100%"
+                  }}
+                >
+                  {carousel.images.map((name, i) => (
+                    <WarpTilt key={i}>
+                      <img
+                        // style={{ paddingRight: "700px" }}
+                        className="home-feature slide"
+                        src={carousel.images[i]}
+                        alt=""
+                      />
+                    </WarpTilt>
+                  ))}
+                </div>
+              </div> */}
               <div>
                 <a onClick={this.handleNext} className="next">
                   NEXT

@@ -12,7 +12,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .home-feature,
@@ -308,7 +308,6 @@ a {
 .footer a:hover {
   color: white;
   background-color: #030303;
-  padding-bottom: 5px;
 }
 
 .footer {

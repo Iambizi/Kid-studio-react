@@ -92,39 +92,40 @@ class Blog extends Component {
     ]
   };
   render() {
+    const blog = this.state;
     return (
       <React.Fragment>
         <NavBar />
         <div className="main-content">
           <div className="projects" style={backgroundPosition}>
             <div className="page-headers" style={blogHeader}>
-              {this.state.title}
+              {blog.title}
             </div>
             <div className="blog-board">
               <div className="blog-post-wrap">
-                {this.state.entryLink.map((entry, i) => (
+                {blog.entryLink.map((entry, i) => (
                   <React.Fragment key={i}>
                     <a
-                      href={this.state.entryLink[i]}
+                      href={blog.entryLink[i]}
                       className="blah"
                       style={{
-                        top: this.state.topStyle[i],
-                        left: this.state.leftStyle[i]
+                        top: blog.topStyle[i],
+                        left: blog.leftStyle[i]
                       }}
                     >
                       <div className="blog-post-info">
                         <div className="blog-post-title">
                           <span className="post-title">
-                            {this.state.entryTitle[i]}
+                            {blog.entryTitle[i]}
                           </span>
                         </div>
                         <div className="blog-timestamp">
-                          {this.state.entryTimeStamp[i]}
+                          {blog.entryTimeStamp[i]}
                         </div>
                       </div>
                       <img
-                        src={this.state.entryImage[i]}
-                        alt={this.state.alt[i]}
+                        src={blog.entryImage[i]}
+                        alt={blog.alt[i]}
                       />{" "}
                     </a>
                   </React.Fragment>
