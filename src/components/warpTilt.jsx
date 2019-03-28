@@ -10,14 +10,15 @@ class WarpTitlt extends Component {
 
     const defaultSettings = {
       reverse: true,
-      max: 35,
+      max: 55,
       perspective: 600,
-      easing: "cubic-bezier(.03,.68,.52,.69)",
+      // easing: "cubic-bezier(.03,.68,.52,.69)",
+      easing: "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
       scale: "1",
-      speed: "600",
+      speed: "3500",
       transition: true,
       axis: null,
-      reset: true
+      reset: false
     };
 
     this.width = null;
@@ -110,7 +111,7 @@ class WarpTitlt extends Component {
   handleMouseLeave(cb = () => {}, e) {
     this.setTransition();
     if (this.settings.reset) {
-      //   this.reset()
+      // this.reset();
     }
     return cb(e);
   }
